@@ -1,11 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Tattoo GD - Estudio de tatuajes profesional en Montevideo, Uruguay. Tatuajes de calidad realizados por Gustavo Da Rosa con más de 10 años de experiencia.">
+    <meta name="keywords" content="tatuajes, estudio de tatuajes, Montevideo, Uruguay, tatuador profesional, diseños personalizados">
+    <meta name="author" content="Tattoo GD - Gustavo Da Rosa">
+    <meta name="theme-color" content="#0f0f0f">
+    
+    <meta property="og:title" content="Tattoo GD - Estudio Profesional de Tatuajes en Montevideo">
+    <meta property="og:description" content="Tatuajes personalizados realizados por Gustavo Da Rosa. Estudio profesional en Montevideo, Uruguay.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Tattoo+GD">
+    
+    <meta name="geo.position" content="-34.9011,-56.1645">
+    <meta name="ICBM" content="-34.9011,-56.1645">
+    <meta name="geo.placename" content="Montevideo, Uruguay">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='bold' fill='%2300ff88'>GD</text></svg>">
+    
+    <title>Tattoo GD - Estudio Profesional de Tatuajes en Montevideo</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header id="header" class="header">
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="logo">
+                    <span class="logo-text">Tattoo GD</span>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+                    <li><a href="#resenas" class="nav-link">Reseñas</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    
+                    <li class="theme-toggle-container">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                            <span class="icon-sun">☀️</span>
+                            <span class="icon-moon">🌙</span>
+                        </button>
+                    </li>
+                </ul>
+                
+                <a href="https://wa.me/59899553322?text=Hola%20Gustavo%20quiero%20consultar%20sobre%20un%20tatuaje" 
+                   class="whatsapp-btn" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="Contactar por WhatsApp">
+                    <span class="whatsapp-icon">💬</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <p class="hero-description">Bienvenido al estudio profesional de Gustavo Da Rosa</p>
+                <a href="#contacto" class="cta-button">Solicitar Cita</a>
+            </div>
+            <div class="hero-background"></div>
+        </section>
+
+        <section id="sobre-mi" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Gustavo Da Rosa</h3>
+                        <p>
+                            Soy un tatuador profesional con más de 10 años de experiencia en la industria. 
+                            Mi pasión es convertir ideas en arte permanente, trabajando con precisión y creatividad 
+                            para crear diseños únicos que reflejen la personalidad de cada cliente.
+                        </p>
+                        <p>
+                            Especializado en múltiples estilos: realista, tradicional, minimalista, blackwork y acuarela.
+                            Cada tatuaje es un proyecto especial que requiere dedicación y profesionalismo.
+                        </p>
+                        <ul class="about-highlights">
+                            <li>✓ +10 años de experiencia</li>
+                            <li>✓ Estudio certificado y autorizado</li>
+                            <li>✓ Equipamiento de última generación</li>
+                            <li>✓ Garantía de calidad y seguridad</li>
+                            <li>✓ Diseños personalizados</li>
+                            <li>✓ Atención profesional</li>
+                        </ul>
+                    </div>
+                    <div class="about-image">
+                        <img src="tatuador.png" 
+                             alt="Gustavo Da Rosa - Tatuador profesional" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="gallery">
+            <div class="container">
+                <h2 class="section-title">Galería de Trabajos</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="1.jpg" alt="Trabajo de tatuaje 1" loading="lazy">
+                        <div class="gallery-overlay">
+                            <p class="gallery-label">Tatuaje destacado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="2.jpg" alt="Trabajo de tatuaje 2" loading="lazy">
+                        <div class="gallery-overlay">
+                            <p class="gallery-label">Diseño artístico</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="3.jpg" alt="Trabajo de tatuaje 3" loading="lazy">
+                        <div class="gallery-overlay">
+                            <p class="gallery-label">Estilo realista</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="4.png" alt="Trabajo de tatuaje 4" loading="lazy">
+                        <div class="gallery-overlay">
+                            <p class="gallery-label">Blackwork moderno</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="5.jpg" alt="Trabajo de tatuaje 5" loading="lazy">
+                        <div class="gallery-overlay">
+                            <p class="gallery-label">Tatuaje tradicional</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="6.jpg" alt="Trabajo de tatuaje 6" loading="lazy">
+                        <div class="gallery-overlay">
+                            <p class="gallery-label">Estilo creativo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ubicacion" class="location">
+            <div class="container">
+                <h2 class="section-title">Ubicación</h2>
+                <div class="location-content">
+                    <div class="location-info">
+                        <h3>Tattoo GD Studio</h3>
+                        <p><strong>Ciudad:</strong> Montevideo, Uruguay</p>
+                        <p><strong>Zona:</strong> Centro</p>
+                        <p><strong>Horarios:</strong></p>
+                        <ul>
+                            <li>Martes - Viernes: 14:00 - 20:00</li>
+                            <li>Sábado: 11:00 - 18:00</li>
+                            <li>Domingo - Lunes: Cerrado</li>
+                        </ul>
+                        <a href="https://wa.me/59899553322?text=Hola%20Gustavo%20quiero%20consultar%20sobre%20un%20tatuaje" 
+                           class="contact-cta" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            Contactar por WhatsApp
+                        </a>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.0826905574386!2d-56.16453!3d-34.90117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80c0c0c0c0c1%3A0x0!2sMonteivdeo%2C%20Centro!5e0!3m2!1ses!2suy!4v1704067200000" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resenas" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Reseñas de Clientes</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">JM</div>
+                            <div>
+                                <h4 class="review-name">Juan Martínez</h4>
+                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            "Gustavo hizo un trabajo excelente con mi tatuaje. Muy profesional, atento a los detalles 
+                            y el ambiente del estudio es muy agradable. ¡Lo recomiendo 100%!"
+                        </p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">CS</div>
+                            <div>
+                                <h4 class="review-name">Carolina Sosa</h4>
+                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            "El diseño que imaginé se convirtió en realidad. Gustavo escuchó cada detalle y el resultado 
+                            superó mis expectativas. Muy recomendado!"
+                        </p>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">LP</div>
+                            <div>
+                                <h4 class="review-name">Lucas Pereira</h4>
+                                <div class="review-stars">⭐⭐⭐⭐⭐</div>
+                            </div>
+                        </div>
+                        <p class="review-text">
+                            "Experiencia increíble. El equipo es profesional, el estudio limpio y los tatuajes de 
+                            excelente calidad. Sin duda vuelvo para mi próximo tatuaje."
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="reviews-footer" style="text-align: center; margin-top: 2rem;">
+                    <a href="#" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: none; font-weight: bold; transition: opacity 0.3s;" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">
+                        Ver más reseñas reales en Google Maps ↗
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Ponte en Contacto</h3>
+                        <p>¿Tienes una idea? Cuéntamela y haremos que se convierta en realidad.</p>
+                        <div class="contact-methods">
+                            <div class="method">
+                                <span class="method-icon">📧</span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <p><a href="mailto:tattooUY@gmail.com">tattooUY@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="method">
+                                <span class="method-icon">💬</span>
+                                <div>
+                                    <strong>WhatsApp</strong>
+                                    <p><a href="https://wa.me/59899553322" target="_blank">+598 9955 3322</a></p>
+                                </div>
+                            </div>
+                            <div class="method">
+                                <span class="method-icon">📱</span>
+                                <div>
+                                    <strong>Instagram</strong>
+                                    <p><a href="https://instagram.com/Tattoo_01" target="_blank">@Tattoo_01</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="name">Nombre *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Teléfono / WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="size">Tamaño estimado y Zona del cuerpo *</label>
+                            <input type="text" id="size" name="size" placeholder="Ej: 10x10cm en el antebrazo derecho" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reference">Imagen de referencia (Opcional)</label>
+                            <input type="file" id="reference" name="reference" accept="image/png, image/jpeg, image/webp" class="file-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Idea detallada *</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Cuéntame sobre el estilo, detalles que te gustaría incluir..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Solicitar Presupuesto</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tattoo GD</h4>
+                    <p>Estudio profesional de tatuajes en Montevideo, Uruguay.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sígueme</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/Tattoo_01" target="_blank">Instagram</a></li>
+                        <li><a href="https://wa.me/59899553322" target="_blank">WhatsApp</a></li>
+                        <li><a href="mailto:tattooUY@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Tattoo GD - Gustavo Da Rosa. Todos los derechos reservados. | Montevideo, Uruguay</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        function setTheme(theme) {
+            if (theme === 'light') {
+                body.classList.add('light-mode');
+            } else {
+                body.classList.remove('light-mode');
+            }
+            localStorage.setItem('theme', theme);
+        }
+
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                setTheme(savedTheme);
+            } else {
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                setTheme(prefersDark ? 'dark' : 'light');
+            }
+        }
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = body.classList.contains('light-mode') ? 'light' : 'dark';
+                const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                setTheme(nextTheme);
+            });
+        }
+
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        }
+
+        initTheme();
+    </script>
 </body>
 </html>
