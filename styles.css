@@ -219,29 +219,6 @@ body.light-mode .icon-sun { display: none; }
 .icon-moon { display: none; }
 body.light-mode .icon-moon { display: inline; }
 
-.whatsapp-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background-color: var(--accent-primary);
-    color: var(--bg-primary);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
-    transition: var(--transition);
-    z-index: 999;
-}
-
-.whatsapp-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
-}
 
 /* =============================================
    HERO SECTION
@@ -265,7 +242,7 @@ body.light-mode .icon-moon { display: inline; }
     bottom: 0;
     background-image:
         linear-gradient(135deg, rgba(15, 15, 15, 0.4) 0%, rgba(0, 0, 0, 0.6) 50%, rgba(15, 15, 15, 0.4) 100%),
-        url("portada.png");
+        url("P1.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -283,9 +260,10 @@ body.light-mode .icon-moon { display: inline; }
     max-width: 900px;
     padding: 0 var(--spacing-sm);
     
-    /* --- NUEVO CÓDIGO --- */
-    margin-top: 35vh; /* Empuja el contenido hacia abajo (35% de la altura de la pantalla) */
-    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.9), 0 2px 4px rgba(0, 0, 0, 1); /* Sombra fuerte al texto para que resalte sobre cualquier parte clara de la foto */
+    /* --- AJUSTE PARA SUBIR EL TEXTO --- */
+    margin-top: 15vh; /* Antes tenías 35vh. Al bajarlo a 15, el texto sube significativamente */
+    
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.9), 0 2px 4px rgba(0, 0, 0, 1);
 }
 
 
@@ -310,21 +288,27 @@ body.light-mode .icon-moon { display: inline; }
     display: inline-block;
     padding: var(--spacing-sm) var(--spacing-lg);
     margin-top: 2rem;
-    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-    color: var(--bg-primary);
+    
+    /* CAMBIOS AQUÍ */
+    background: var(--bg-primary); /* Fondo oscuro (usando tu variable) */
+    color: var(--accent-primary);  /* Texto verde neón */
+    border: 2px solid var(--accent-primary); /* Borde verde para que resalte */
+    
     text-decoration: none;
     border-radius: var(--radius-lg);
     font-weight: 600;
     font-size: 1.1rem;
     transition: var(--transition);
-    box-shadow: 0 4px 15px rgba(0, 255, 136, 0.3);
-    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
     cursor: pointer;
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.5);
+    /* Efecto de brillo verde al pasar el mouse */
+    background: var(--accent-primary); 
+    color: var(--bg-primary);
+    box-shadow: 0 6px 20px rgba(0, 255, 136, 0.4);
 }
 
 .about,
